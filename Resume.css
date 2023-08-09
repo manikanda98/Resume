@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   color: rgb(255, 255, 255);
+   /* background:url(Images/wp7957458.jpg); */
+}
+body{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url(Images/bg2.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.resume{
+display: flex;
+flex-direction: column;
+width: 600px;
+position: relative;
+justify-content: center;
+ align-items: center;
+background: transparent;
+
+
+}
+.bubble:nth-child(1){
+    position: fixed;
+    height: 300px;
+    width: 500px;
+    background-color:transparent;
+    z-index:1;
+     top: 0%;
+     left: 5%;
+     transform: translate(-50%,10%);
+    box-shadow: 0px 5px 10px white;
+    rotate:150deg;
+    border: 1px solid black;
+
+}
+.bubble:nth-child(2){
+   
+    position: fixed;   
+    height: 300px;
+    width: 600px;
+   
+    /* background-color:transparent; */
+    background-color:transparent;
+    z-index: 1;
+    top: 65%;
+    box-shadow: 0px 5px 10px white;
+     left: 50%;
+     rotate: 50deg;
+     transform: translate(-50%);
+     border: 1px solid black;
+}
+.bubble:nth-child(3){
+    position: fixed;   
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+    top:86%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color:transparent;
+    z-index: 2;
+    box-shadow: 0px 5px 20px rgb(97, 97, 97);
+    opacity: 0.4;  
+    border: 1px solid black;
+}
+.bubble:nth-child(4){
+    position: fixed;   
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /* background-color:transparent; */
+    background-color:transparent;
+    z-index: 1;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0px 5px 10px white;
+    
+}
+.header .profilePic img{
+    border-radius: 50%;
+    padding: 10px;  
+}
+.Name {
+    position: relative;
+    display: block; 
+     
+}
+.Name h1{
+    color: #ffffff;
+}
+
+.role{
+    margin: 10px;
+    color: Grey;
+    font-size: 16px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;   
+}
+.desc{
+    color: rgb(255, 255, 255);
+}
+.links{
+    margin:5px 0 5px 0;
+    background: black;
+    color: white;
+    box-shadow:0px 2px 5px rgb(255, 255, 255),0px 2px 15px rgb(0, 0, 0),0px 2px 25px rgb(0, 0, 0);
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    Max-height: 100px;
+    padding:10px 0px 10px 0px;
+    border: 2px solid black;
+    border-left-color: transparent;
+   border-right-color: transparent;
+   justify-content: center;
+   align-items: center;
+   position:sticky;
+   width: 100%;
+   z-index: 1;
+   border-radius: 1em;
+}
+.links a{
+ display: flex;
+ margin: 5px;
+ color: rgb(255, 255, 255);
+ background-color: rgb(0, 0, 0);
+ text-decoration: none;
+ position: relative;
+ justify-content: center;
+ align-items: center;
+ width: 100px;
+ 
+}
+.skills{
+    max-width: 300px;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    display: flex;
+}
+.links a::after{
+    content:'';
+  width:0%;
+  height: 3px;
+  position:absolute;
+  bottom: -5px;
+  left: 60%;
+  transform: translateX(-50%);
+  background: white;
+  transition:0.3s;
+}
+/* @keyframes rot {
+    from
+    {
+        transform: translate3d(90%);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+} */
+
+.links a:hover::after{
+    transition: 1s;
+    width: 50%;
+   
+}
+.links a:hover{
+    animation: rot 1s linear infinite normal;
+}
+.links a img{
+    margin-right: 10px;
+}
+.links a:nth-child(2){
+    /* background-color: aqua; */
+    position: relative;
+    left: 10px;
+}
+
+.container{
+    display: flex;
+    position:relative;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+    }
+
+::-webkit-scrollbar {
+       display: none;
+}
+ .details{
+
+    display: flex;  
+     background: transparent;
+}
+@media (max-width:600px) {
+      body{
+        width: 480px;
+      }
+}
