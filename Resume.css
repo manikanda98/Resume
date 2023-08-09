@@ -88,7 +88,7 @@ background: transparent;
 }
 .header .profilePic img{
     border-radius: 50%;
-    padding: 10px;  
+    margin: 5px;  
 }
 .Name {
     position: relative;
