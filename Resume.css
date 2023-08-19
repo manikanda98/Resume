@@ -3,7 +3,6 @@
     padding: 0;
    box-sizing: border-box;
    color: rgb(255, 255, 255);
-   /* background:url(Images/wp7957458.jpg); */
 }
 body{
     position: absolute;
@@ -86,10 +85,10 @@ background: transparent;
     box-shadow: 0px 5px 10px white;
     
 }
-.header .profilePic img{
+/* .header .profilePic img{
     border-radius: 50%;
     margin: 5px;  
-}
+} */
 .Name {
     position: relative;
     display: block; 
